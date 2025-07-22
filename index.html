@@ -1,0 +1,437 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <title>Gopalakrishnan Sankararajan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <link href="css/flipping_gallery.css" rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="js/jquery.modal.css" type="text/css" />
+  <script src="js/jquery.modal.js"></script>
+  <script type="text/javascript" src="js/jquery.flipping_gallery.js"></script>
+  <script>
+	  $(document).ready( function() {
+	    $(".gallery").flipping_gallery({
+	      enableScroll:false,
+	      direction: "forward",
+	      flipDirection: "bottom",
+	      spacing: 50, 
+	      autoplay: 3000
+	    });
+	  });
+		
+	</script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+  <script type="text/javascript">
+			$(function() {
+
+				var filterList = {
+
+					init : function() {
+
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#portfoliolist').mixitup({
+							targetSelector : '.portfolio',
+							filterSelector : '.filter',
+							effects : ['fade'],
+							easing : 'snap',
+							// call the hover effect
+							onMixEnd : filterList.hoverEffect()
+						});
+
+					},
+
+					hoverEffect : function() {
+
+						// Simple parallax effect
+						$('#portfoliolist .portfolio').hover(function() {
+							$(this).find('.label').stop().animate({
+								bottom : 0
+							}, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({
+								top : -30
+							}, 500, 'easeOutQuad');
+						}, function() {
+							$(this).find('.label').stop().animate({
+								bottom : -40
+							}, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({
+								top : 0
+							}, 300, 'easeOutQuad');
+						});
+
+					}
+				};
+
+				// Run the show!
+				filterList.init();
+
+			});
+		</script>
+  <link href="css/magnific-popup.css" rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+  <script>
+		$(document).ready(function() {
+		$('.popup-with-zoom-anim').magnificPopup({
+			type: 'inline',
+	
+			fixedContentPos: false,
+			fixedBgPos: true,
+	
+			overflowY: 'auto',
+	
+			closeBtnInside: true,
+			preloader: false,
+			
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-zoom-in'
+		});
+
+	});
+  </script>
+  </head>
+  <body>
+<div class="header" id="header-top">
+    <div class="wrap">
+    <div class="header-top">
+        <div class="logo"> <a href="index.html"><img src="images/gk-logo.png"  alt="" style="padding:5px 10px 0px 60px"/></a> </div>
+        <!---start-top-nav---->
+        <div class="top-nav cssmenu">
+        <nav class="nav clearfix"> <a id="menu-toggle" class="anchor-link"><img src="images/nav-icon.png" alt="" /></a>
+            <ul class="simple-toggle" id="nav">
+            <li class="current"><a href="#section-1"  class="scroll">Home</a></li>
+            <li><a href="#section-2" class="scroll">About</a></li>
+            <!--<li><a href="#section-3">Our Services</a></li>-->
+            <li><a href="#section-4" class="scroll">Recent Project & Work's</a></li>
+            <li><a href="#section-5" class="scroll">Contact</a></li>
+          </ul>
+          </nav>
+        <script type="text/javascript">
+					  $(document).ready(function() {
+					
+						$('#menu-toggle').click(function () {
+					      $('#nav').toggleClass('open');
+					      e.preventDefault();
+					    });
+					    
+					});
+				</script> 
+      </div>
+        <!---End-top-nav---->
+        <div class="clear"></div>
+      </div>
+    <div class="header-bottom section" id="section-1">
+        <div class="img-banner">
+        <div class="intro-text">
+            <p>Gopalakrishnan Sankararajan, UX / UI / Product Designer  </p>
+          </div>
+        <div class="img-banner-info">
+            <h3>Overview</h3>
+            <div class="featured-project-desc">
+            <p>I'm a people-person. I like helping others and making a difference in their lives. Therefore, I love Psychology and everything that comes with it. There is nothing greater than finding ways to improve people’s interaction with the world. As a UX designer, I have the opportunity to do this and more</p>
+            <ul>
+                <li>User Experience Designer with knowledge in the user-centered design</li>
+                <li>Strong experience on UX/UI/Product/Website Design </li>
+                <li>Experience in developing Responsive interface designs</li>
+                <li>Mobile application design experience across operating systems (iOS, Android)</li>
+                <li>Strong desire to inspire creativity, innovative thinking and offer compelling solutions that translate into building worldclass interactive experiences and products across all digital platforms</li>
+              </ul>
+            <a href="#section-4" class="scroll"> Recent Project & Work's</a> </div>
+          </div>
+        <script>
+function myFunction() {
+window.open("http://allworxuae.com/");
+}
+
+function myFunction1() {
+window.open("http://demo.appmanager.com");
+}
+function myFunction2() {
+window.open("http://www.thecapital.ae");
+}
+function myFunction3() {
+window.open("https://roofandfloor.com");
+}
+</script>
+        <div class="img-banner-pic">
+            <div class="gallery"> <a href="http://www.thecapital.ae" target="_blank"><span class="gallery-image" onclick="myFunction2()"><img src="images/s1.png" alt="" /></span></a> <a href="http://demo.appmanager.com" target="_blank"><span class="gallery-image" onclick="myFunction1()"><img src="images/s5.png" alt="" /></span></a> <a href="https://roofandfloor.com" target="_blank"><span class="gallery-image" onclick="myFunction3()"><img src="images/s8.png" alt="" /></span></a> 
+            
+            <!--<a href="http://allworxuae.com/" target="_blank"><span class="gallery-image" onclick="myFunction()"><img src="images/s7.png" alt="" /></span></a> --> 
+          </div>
+          </div>
+        <div class="clear"> </div>
+      </div>
+      </div>
+  </div>
+  </div>
+<!-- End Header -->
+
+<div class="main"> 
+    
+    <!-- About Section -->
+    <div class="about-section section" id="section-2">
+    <div class="wrap">
+        <h2>About</h2>
+        <div class="intro-text">
+        <p> Intuitive / Problem Solver / Collaborative / 
+Creative / Communicative / Visionary /
+Passionate / Detail Oriented</p>
+      </div>
+        <div class="section group">
+        <div class="col_1_of_2 span_1_of_2">
+            <p>Expertise in UI / UX / Product Design/ graphics/ web design understands and evaluates requirements and deliver product to the fullest satisfaction of customers within the allotted time frame. Responsible to organize, categorize & sort information in accordance with user’s needs and criterion, Conceptualize graphics layouts, display standards, colours and visual appeal based on the brand values and latest trends. Enhance the ease of navigation and ensure that all information can be accessed through the homepage. Coordinate with development team for programming. Conduct fresh eye usability tests analyse the results and improve the product. </p>
+          </div>
+        <div class="col_1_of_2 span_1_of_2">
+            <p>Proficient in designing Web applications, user-centered design, responsibilities includes design of mock-up static pages in line with latest trends and appealing display standards and enhancement of navigation and accessibility. Coordinate with the web development team for programming Mock-up layouts. Promoting the product by preparing brochures, Email Newsletters, Image Ads, landing pages and also enhances the brand value popularity via social media interaction.</p>
+          </div>
+      </div>
+        <div class="technology-skills">
+        <ul>
+            <li class="jquery"><span>GUI Guidelines<br>Branding<br>SEO<br>Analytics<br>A/B Testing
+              </span></li>
+            <li class="photoshop"><span>Photoshop <br>
+              Illustrator<br>
+              Dreamweaver<br>
+              Indesign <br>
+              Fireworks <br>
+              Premiere Pro<br>
+              After Effects<br>
+              Adobe Presenter
+              </span> </li>
+            <li class="wordpress"><span>Html<br>CSS, Bootstrap
+              </span></li>
+            <!--<li class="php"><span>PHP, JS<br>
+              </span></li>-->
+            <li class="seo"><span>JS, jQuery, Python<br>
+              </span></li>
+            <li class="css3"><span>User Centered Design<br>
+            Interaction Design<br>UX Research<br>Design Strategy<br>Profile and Persona<br>Storyboard<br>Filed Studies<br>Data Gathering<br>Task Analysis<br>Information Architecture<br>Usability Testing
+             </span></li>
+            <li class="html5"><span>Figma<br>Figjam<br>Sketch<br>InVison<br>Illustrator
+              </span></li>
+            <div class="clear"></div>
+          </ul>
+      </div>
+      </div>
+  </div>
+    
+    <!-- Services Section --> 
+    
+    <!-- Our Works Section -->
+    <div class="works-section section" id="section-4">
+    <div class="wrap">
+        <div class="work-section-heading">
+        <h2>Recent Project & Work's</h2>
+        <p class="sub-text">Note : I have not uploaded all my works samples here due to various organization policies</p>
+        <!--<ul id="filters" class="clearfix">
+            <li> <span class="filter active" data-filter="all">All Projects</span> </li>
+            <li> <span class="filter" data-filter="web">Products / Website</span> </li>
+            <li> <span class="filter" data-filter="mobile">Mobile</span> </li>
+            <li> <span class="filter" data-filter="brochures">Brochures</span> </li>
+            <li> <span class="filter" data-filter="graphic">Advert</span> </li>
+            <li> <span class="filter" data-filter="logo">Logo</span> </li>
+            <div class="clear"></div>
+          </ul>-->
+        <div class="clear"></div>
+      </div>
+        <div id="portfoliolist"> 
+        
+        <div class="portfolio web"> <a href="http://demo.appmanager.com/" target="_blank">
+          <div class="portfolio-wrapper" style="background: url(images/website-thum/s7.png) no-repeat center;"> </div>
+          <h4>App Manager - Live Demo (Product)</h4>
+          </a> </div>
+     <div class="portfolio web">
+         <a href="http://www.zoho.com" target="_blank" class="proj-link">
+			<div class="portfolio-wrapper" style="background: url(images/website-thum/s1.png) no-repeat center;"> </div>
+								<h4>www.zoho.com</h4>
+								</a>
+			</div>
+							
+							 <div class="portfolio web"> <a  href="http://www.manageengine.com/products/applications_manager/index.html" target="_blank">
+          <div class="portfolio-wrapper" style="background: url(images/website-thum/s3.png) no-repeat center;"> </div>
+          <h4>www.appmanager.com</h4>
+          </a> </div>
+							
+		       <div class="portfolio web"> <a href="http://www.thecapital.ae" target="_blank">
+          <div class="portfolio-wrapper" style="background: url(images/website-thum/s11.png) no-repeat center;"> </div>
+          <h4>www.thecapital.ae</h4>
+          </a> </div>
+       
+        <!--<div class="portfolio brochures"> <a href="images/flyers/holiday-poster-tv-display.jpg" target="_blank">
+          <div class="portfolio-wrapper" style="background: url(images/flyers/holiday-party-thum.png) no-repeat center;"> </div>
+          <h4>Holiday Party 2017 </h4>
+          </a> 
+           
+          </div>-->
+          
+          <div class="portfolio mobile"> <a href="https://itunes.apple.com/us/app/applications-manager/id525673150?mt=8" target="_blank">
+          <div class="portfolio-wrapper" style="background: url(images/app/p1.png) no-repeat center;"> </div>
+          <h4>APM Iphone App</h4>
+          </a> </div>
+          
+         <div class="portfolio web"> <a  href="https://roofandfloor.com/chennai-real-estate" target="_blank">
+          <div class="portfolio-wrapper" style="background: url(images/website-thum/rnf-thum.png) no-repeat center;"> </div>
+          <h4>www.roofandfloor.com (Product)</h4>
+          </a> </div>
+        
+        <div class="portfolio web"> <a href="http://www.site24x7.com" target="_blank">
+          <div class="portfolio-wrapper" style="background: url(images/website-thum/s10.png) no-repeat center;"> </div>
+          <h4>www.site24x7.com</h4>
+          </a> </div>
+          
+  
+   
+  <div class="portfolio web">
+								<a href="http://www.opmanager.com" target="_blank">
+								<div class="portfolio-wrapper" style="background: url(images/website-thum/s9.png) no-repeat center;"> </div>
+								<h4>www.opmanager.com</h4>
+							    </a>
+							   
+							</div>
+        
+<div class="portfolio mobile">
+								<a  href="https://itunes.apple.com/us/app/zoho-crm/id444908810?mt=8" target="_blank">
+								<div class="portfolio-wrapper" style="background: url(images/app/p5a.png) no-repeat center;"> </div>
+								<h4>ZOHO CRM Mobile App </h4>
+							    </a>
+							  
+							</div>
+        
+
+        
+        
+        
+      
+        
+        <!--  <div class="portfolio mobile">
+								<a href="https://itunes.apple.com/us/app/zoho-crm/id444908810?mt=8" target="_blank">
+								<div class="portfolio-wrapper" style="background: url(images/app/p2.png) no-repeat center;"> </div>
+								<h4>Zoho CRM Iphone APP</h4>
+							    </a>
+							    
+							</div>--> 
+        
+        <!-- <div class="portfolio mobile">
+								<a href="https://itunes.apple.com/us/app/zoho-invoice-and-time-tracker/id413017364?mt=8" target="_blank">
+								<div class="portfolio-wrapper" style="background: url(images/app/p6.png) no-repeat center;"> </div>
+								<h4>Invoice Mobile App</h4>
+							    </a>							   
+							</div>--> 
+        
+        <!--   <div class="portfolio web">
+								<a  href="http://manageengine.com/" target="_blank">
+								<div class="portfolio-wrapper" style="background: url(images/website-thum/s8.png) no-repeat center;"> </div>
+								<h4>www.manageengine.com</h4>
+							    </a>
+							    
+									
+							</div>-->
+        
+       
+        
+        <!--<div class="portfolio web">
+								<a target="_blank" href="http://crm.zoho.com">
+								<div class="portfolio-wrapper" style="background: url(images/website-thum/s6.png) no-repeat center;"> </div>
+								<h4>www.crm.zoho.com</h4>
+							    </a>
+							    
+							</div>-->
+        
+       
+        
+        <div class="clear"></div>
+      </div>
+      </div>
+  </div>
+  </div>
+
+<!-- Contact -->
+<div class="contact-section section" id="section-5">
+    <div class="map"> </div>
+    <div class="wrap">
+    <div class="contact-info">
+        <div class="contact-info-left">
+        <h3>Get in touch. Just fill the below form</h3>
+        <form method="post" action="indexmail.php" name="form1">
+            <span>
+          <input type="text" class="name-textbox" name="name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+          <input type="text" class="telephone-textbox" value="Mobile" name="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile';}">
+          <div class="clear"></div>
+          </span>
+            <input type="text" class="textbox" value="Email" name="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+            <span>
+          <textarea value="Message:" class="message-textbox" name="message"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+          <input type="submit" value="Go" class="contact-btn">
+          <div class="clear"></div>
+          </span>
+          </form>
+      </div>
+        <div class="contact-info-right">
+        <h3>Get in touch</h3>
+        <div class="comapny-address">
+            <ul>
+            <li>Gopalakrishnan Sankararajan</li>
+            <li>India</li>
+          </ul>
+            <ul>
+            <li>Email : <a href="mailto:gpl.sankar@gmail.com?Subject=Inquiry:&body=Contact%20Name:%0APhone %20number:%0AEmail:%0AMessage:">gpl.sankar@gmail.com</a></li>
+            <li>Mob : +91 9600778228</li>
+          </ul>
+            <div class="clear"></div>
+          </div>
+        <div class="social-media">
+          
+            <ul>
+            <li class="facebook"><a href="https://www.facebook.com/gopala.krishnan.73997" target="_blank"> </a></li>
+            <li class="linked-in"><a href="https://in.linkedin.com/in/gksrml" target="_blank"> </a></li>
+          </ul>
+          </div>
+      </div>
+      </div>
+    <div class="footer">
+        <div class="copy copy-left"> </div>
+        <div class="clear"></div>
+        <div class="scroll-top"> <a href="#header-top" class="scroll"> </a> </div>
+      </div>
+  </div>
+  </div>
+<!-- End Contact --> 
+<script src="js/jquery.scrollTo.js"></script> 
+<script src="js/jquery.nav.js"></script> 
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#nav').onePageNav({
+			begin: function() {
+			console.log('start')
+			},
+			end: function() {
+			console.log('stop')
+			}
+		});
+	});
+	</script> 
+<script type="text/javascript">
+	    jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59972091-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
